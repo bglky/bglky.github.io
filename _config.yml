@@ -6,7 +6,7 @@ email: yuandaozhou@qq.com
 description: ""
 keyword: "bglky,周炳光"
 url: "http://bglky.github.io"              # your host, for absolute URL
-baseurl: "/"         # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl: "http://bglky.github.io"         # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
