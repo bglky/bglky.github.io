@@ -7,7 +7,6 @@ author:     "bglky"
 header-img: "img/post-bg-unix-linux.jpg"
 tags:
     - OS
-    - Unix
     - Linux
 ---
 
