@@ -6,6 +6,7 @@ email: yuandaozhou@qq.com
 description: ""
 keyword: "bglky,周炳光"
 url: "http://bglky.github.io"              # your host, for absolute URL
+#url: "http://localhost:4000"              # your host, for absolute URL
 baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 
 
@@ -80,9 +81,9 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 
 
 # Friends
-#friends: [
-#    {
-#        title: "Hux Blog",
-#        href: "http://huangxuan.me"
-#    }
-#]
+friends: [
+    {
+        title: "Hux Blog",
+        href: "http://huangxuan.me"
+    }
+]
