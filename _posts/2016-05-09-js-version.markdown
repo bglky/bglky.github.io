@@ -2,7 +2,7 @@
 layout:     post
 title:      "JavaScript versioning"
 subtitle:   "ES5, ES6, ES2016, ES.Next: What's going on with JavaScript versioning?"
-date:       2015-09-22
+date:       2016-05-09 23:50:00
 author:     "Bglky" 
 header-img: "img/post-bg-js-version.jpg"
 tags:
