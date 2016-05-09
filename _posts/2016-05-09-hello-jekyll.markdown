@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "jekyll安装--window环境"
+title:      "jekyll安装 - window环境"
 subtitle:   " \"Hello Jekyll, Hello Blog.\""
 date:       2016-05-09 1:00:00
 author:     "bglky"
