@@ -24,7 +24,7 @@ tags:
 
 ### jekyll安装
 
- 1.  `gem install jekyll`（可能会被墙，可换淘宝镜像，请自行百度）;安装后 `jekyll -v` 查看版本
+ 1.  `gem install jekyll`（国内可能会被墙，可换淘宝镜像，请自行百度）;安装后 `jekyll -v` 查看版本
 
 
   [1]: http://rubyinstaller.org/downloads/

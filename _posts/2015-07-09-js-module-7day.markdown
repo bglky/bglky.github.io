@@ -7,8 +7,7 @@ date:       2015-07-09
 author:     "bglky"
 header-img: "img/post-bg-js-version.jpg"
 tags:
-    - 前端开发
-    - JavaScript
+    - JS
 ---
 
 

@@ -6,7 +6,6 @@ date:       2015-04-14
 author:     "bglky"
 header-img: "img/post-bg-unix-linux.jpg"
 tags:
-    - OS
     - Linux
 ---
 
