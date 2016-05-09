@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Jekyll安装 - Window环境"
+title:      "Jekyll安装 - Windows环境"
 subtitle:   " \"Hello Jekyll, Hello Blog.\""
 date:       2016-05-09 1:00:00
 author:     "Bglky"
@@ -40,7 +40,7 @@ tags:
 
 ### 更多安装参考
  1. [Jekyll 官网][2]
- 2. [A step-by-step guide to setting up Jekyll on Windows][3]
+ 2. [Run Jekyll on Windows][3]
 
 
   [1]: http://rubyinstaller.org/downloads/
