@@ -1,9 +1,9 @@
 ---
 layout:     post
-title:      "jekyll安装 - window环境"
+title:      "Jekyll安装 - Window环境"
 subtitle:   " \"Hello Jekyll, Hello Blog.\""
 date:       2016-05-09 1:00:00
-author:     "bglky"
+author:     "Bglky"
 header-img: "img/post-bg-2015.jpg"
 tags:
     - 博客
@@ -22,7 +22,7 @@ tags:
 （至此可以使用`gem -v`查看版本，至此jekyll的依赖环境安装完成）
 
 
-### jekyll安装
+### Jekyll安装
 
  1.  `gem install jekyll`（国内可能会被墙，可换淘宝镜像，请自行百度）;安装后 `jekyll -v` 查看版本
 
@@ -39,7 +39,7 @@ tags:
 > From 2016, 'pygments' is unsupported on GitHub Pages. Use **'rouge'** for highlighting instead.
 
 ### 更多安装参考
- 1. [jekyll 官网][2]
+ 1. [Jekyll 官网][2]
  2. [A step-by-step guide to setting up Jekyll on Windows][3]
 
 
