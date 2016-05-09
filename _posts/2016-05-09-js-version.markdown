@@ -1,8 +1,8 @@
 ---
 layout:     post
-title:      "JavaScript versioning"
+title:      "JavaScript Versioning"
 subtitle:   "ES5, ES6, ES2016, ES.Next: What's going on with JavaScript versioning?"
-date:       2016-05-09 23:50:00
+date:       2016-05-09
 author:     "Bglky" 
 header-img: "img/post-bg-js-version.jpg"
 tags:
