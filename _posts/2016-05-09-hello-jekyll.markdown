@@ -19,12 +19,12 @@ tags:
  5. `ruby dk.rb init`
  6. `ruby dk.rb install`
  
-（至此可以使用`gem -v`查看版本，至此jekyll的依赖环境安装完成）
+（`gem -v`检查是否安装成功，至此 jekyll 的依赖环境安装完成）
 
 
 ### Jekyll安装
 
- 1.  `gem install jekyll`（国内可能会被墙，可换成淘宝镜像，请自行百度）;安装后 `jekyll -v` 查看版本
+ 1.  `gem install jekyll`（国内可能会被墙，可换成淘宝镜像，请自行百度）; `jekyll -v` 检查是否安装成功
 
 ### 创建jekyll项目
 
