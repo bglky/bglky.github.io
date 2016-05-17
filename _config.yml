@@ -54,7 +54,11 @@ kramdown:
 # Duoshuo settings
 duoshuo_username: bglky
 # Share component is depend on Comment so we can NOT use share only.
+<<<<<<< HEAD
 duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+=======
+duoshuo_share: true                   # set to false if you want to use Comment without Sharing
+>>>>>>> 9be628b6a7b0f8c4ac4cad8e46933001372540bc
 
 
 
@@ -87,7 +91,12 @@ friends: [
         title: "Hux Blog",
         href: "http://huangxuan.me"
     },{
+<<<<<<< HEAD
         title: "Hansome",
         href: "http://it198.com"
+=======
+        title:"Hansome",
+        href:"http://it198.com"
+>>>>>>> 9be628b6a7b0f8c4ac4cad8e46933001372540bc
     }
 ]
