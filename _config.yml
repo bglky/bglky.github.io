@@ -86,5 +86,9 @@ friends: [
     {
         title: "Hux Blog",
         href: "http://huangxuan.me"
+    },
+    {
+        title:"hansome",
+        href:"http://it198.com"
     }
 ]
