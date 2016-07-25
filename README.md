@@ -1,5 +1,5 @@
 # Bglky Blog
-My Blog / Jeyll Theme , SPA and responsive , based on Framework7 and Jekyll.
+My Blog / Jekyll Theme , SPA and responsive , based on Framework7 and Jekyll.
 
 ## Live Demo
 ### [http://bglky.me](http://bglky.me "Bglky Blog")

@@ -10,7 +10,7 @@ title: Bglky Blog
 SEOTitle: 周炳光的博客 | Bglky Blog
 email: bglky.me@gmail.com
 keywords: "周炳光,bglky,周炳光的博客,bglky blog,赖柯滢,responsive,blog,framework7,jekyll"
-description: "My Blog / Jeyll Theme , SPA and responsive , based on Framework7 and Jekyll."
+description: "My Blog / Jekyll Theme , SPA and responsive , based on Framework7 and Jekyll."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://bglky.me" # the base hostname & protocol for your site
 
