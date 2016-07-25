@@ -20,7 +20,7 @@ markdown: kramdown
 
 gems: [jekyll-paginate]
 
-exclude: [".project"]
+exclude: [".project","README.md"]
 paginate: 10
 disqus_username: bglky
 
@@ -42,8 +42,8 @@ introduction: One sentence introducing yourself of what you do. #One sentence in
 avatar: /img/avatar.jpg                 # the path to your avatar
 RSS: false
 github_username: bglky
-twitter_username: zhoubglky
-facebook_username: 
+#twitter_username: zhoubglky
+#facebook_username: bglky
 
 # Friends
 friends: [
