@@ -6,12 +6,12 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: SPA-blog
-SEOTitle: SPA-blog | 单页-响应式-博客
+title: Bglky Blog
+SEOTitle: 周炳光的博客 | Bglky Blog
 email: bglky.me@gmail.com
-keywords: "SPA-blog,周炳光,bglky,responsive,blog,framework7,jekyll"
+keywords: "周炳光,bglky,周炳光的博客,bglky blog,赖柯滢,responsive,blog,framework7,jekyll"
 description: "An awesome SPA and responsive blog based on Framework7 and Jekyll!"
-baseurl: "/SPA-blog" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://bglky.me" # the base hostname & protocol for your site
 
 
@@ -21,7 +21,7 @@ markdown: kramdown
 gems: [jekyll-paginate]
 
 exclude: [".project"]
-paginate: 3
+paginate: 10
 disqus_username: bglky
 
 
@@ -43,18 +43,12 @@ avatar: /img/avatar.jpg                 # the path to your avatar
 RSS: false
 github_username: bglky
 twitter_username: zhoubglky
-facebook_username: bglky
+facebook_username: 
 
 # Friends
 friends: [
     {
-        title: "Bglky",
-        href: "http://bglky.me"
-    },{
-        title: "Friend2",
-        href: "http://xxx.com"
-    },{
-        title: "Friend3",
-        href: "http://xxx.com"
+        title: "Hansome",
+        href: "http://it198.com"
     }
 ]
