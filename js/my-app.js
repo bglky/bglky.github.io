@@ -15,7 +15,7 @@ var mainView = myApp.addView('.view-main', {
 	//dynamicNavbar: true
 });
 $$(document).on('pageAfterAnimation', '.page', function() {//一开始就进入有评论的页面时还有问题
-	
+	$$("article a[href^='http']").addClass("external");
 	if($$(".page-on-left").find("#disqus_thread"))
 	{
 		$$(".page-on-left").find("#disqus_thread").remove();
@@ -41,6 +41,7 @@ $$(document).on('pageAfterAnimation', '.page', function() {//一开始就进入�
 		});
 	}
 })
+$$("article a[href^='http']").addClass("external");
 //$$(document).once('pageAfterAnimation', '.page', function(e) {
 //	(function() {
 //		var dsq = document.createElement('script');
