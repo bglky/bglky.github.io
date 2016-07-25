@@ -2,7 +2,7 @@
 layout:     post
 title:      "Jekyll安装 - Windows环境"
 subtitle:   " \"Hello Jekyll, Hello Blog.\""
-date:       2016-05-09
+date:       2016-05-09 10:25:07 +0800
 author:     "Bglky"
 header-img: "img/post-bg-2015.jpg"
 tags:

@@ -1,0 +1,60 @@
+<!-- Featured Tags -->
+{% if site.featured-tags %}
+<div class="content-block-title">FEATURED TAGS</div>
+<div class="content-block">
+	<ul>
+		{% for tag in site.tags %}
+		{% if tag[1].size >= {{site.featured-condition-size}} %}
+		<li>
+			<a class="link chip" href="{{ site.baseurl }}/tags/#{{ tag[0] }}">
+				<!--<div class="chip-media bg-blue">T</div>-->
+				<div class="chip-label">{{ tag[0] }}</div>
+			</a>
+		</li>
+		{% endif %}
+		{% endfor %}
+	</ul>
+</div>
+{% endif %}
+
+<!-- Socials -->
+{% if site.socials %}
+<div class="content-block-title socials-title">SOCIALS</div>
+<div class="content-block socials">
+	<img class="avatar" src="{{ site.avatar | prepend: site.baseurl }}">
+	<p class="introduction">{{ site.introduction }}</p>
+	<ul class="social-media-list">
+		{% if site.github_username %}
+		<li>
+			<a class="link icon-only external" target="_blank" href="https://github.com/{{ site.github_username }}">
+				<i class="icon icon-github"></i>
+			</a>
+		</li>
+		{% endif %} {% if site.twitter_username %}
+		<li>
+			<a class="link icon-only external" target="_blank" href="https://twitter.com/{{ site.twitter_username }}">
+				<i class="icon icon-twitter"></i>
+			</a>
+		</li>
+		{% endif %} {% if site.facebook_username %}
+		<li>
+			<a class="link icon-only external" target="_blank" href="https://facebook.com/{{ site.facebook_username }}">
+				<i class="icon icon-facebook"></i>
+			</a>
+		</li>
+		{% endif %}
+	</ul>
+</div>
+{% endif %}
+
+<!-- Friends Blog -->
+{% if site.friends %}
+<div class="content-block-title">FRIENDS</div>
+<div class="content-block">
+	<ul>
+		{% for friend in site.friends %}
+		<li class="friend-link"><a class="link external" href="{{friend.href}}">{{friend.title}}</a></li>
+		{% endfor %}
+	</ul>
+</div>
+{% endif %}

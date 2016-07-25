@@ -1,22 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-
-{% include head.html %}
-
-<!-- hack iOS CSS :active style -->
-<body ontouchstart="">
-
-    {% include nav.html %}
-
-    {{ content }}
-
-    {% include footer.html %}
-
-
-<!-- Image to hack wechat -->
-<!-- <img src="/img/icon_wechat.png" width="0" height="0" /> -->
-<!-- Migrate from head to bottom, no longer block render and still work -->
-
-</body>
-
+<html lang="zh-CN">
+	{% include head.html %}
+	<body>
+		<!-- Status bar overlay for full screen mode (PhoneGap) -->
+		<div class="statusbar-overlay"></div>
+		<!-- Panels overlay-->
+		<div class="panel-overlay"></div>
+		{% include panel-left.html %}
+		<!-- Views -->
+		<div class="views">
+			<!-- Your main view, should have "view-main" class -->
+			<div class="view view-main">
+				<!-- Pages container, because we use fixed navbar and toolbar, it has additional appropriate classes-->
+				<div class="pages navbar-fixed">
+					{{ content }}
+				</div>
+			</div>
+		</div>
+		<!-- Path to Framework7 Library JS-->
+		<script src="{{ "/js/framework7.min.js" | prepend: site.baseurl }}"></script>
+		<!-- Path to your web app js-->
+		<script src="{{ "/js/my-app.js" | prepend: site.baseurl }}"></script>
+	</body>
 </html>

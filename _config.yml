@@ -1,94 +1,60 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
 # Site settings
-title: Bglky Blog
-SEOTitle: 周炳光的博客 | Bglky Blog
-header-img: img/home-bg.jpg
-email: yuandaozhou@qq.com
-description: "周炳光的技术博客"
-keyword: "bglky,周炳光,bglky blog,周炳光的博客,赖柯滢"
-#url: "http://bglky.github.io"              # your host, for absolute URL
-url: "http://bglky.me"              # your host, for absolute URL
-#url: "http://localhost:4000"              # your host, for absolute URL
-baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
-
-
-
-# SNS settings
-RSS: false
-#weibo_username:     bgqkl
-#zhihu_username:     bgqkl
-github_username:    bglky
-#twitter_username:  bglky
-#facebook_username:  bglky
-
+title: SPA-blog
+SEOTitle: SPA-blog | 单页-响应式-博客
+email: bglky.me@gmail.com
+keywords: "SPA-blog,周炳光,bglky,responsive,blog,framework7,jekyll"
+description: "An awesome SPA and responsive blog based on Framework7 and Jekyll!"
+baseurl: "/SPA-blog" # the subpath of your site, e.g. /blog
+url: "http://bglky.me" # the base hostname & protocol for your site
 
 
 # Build settings
-# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
-highlighter: rouge
-permalink: pretty
-paginate: 10
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
-anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+markdown: kramdown
 
-
-
-# Gems
-# from PR#40, to support local preview for Jekyll 3.0
 gems: [jekyll-paginate]
 
-
-
-# Markdown settings
-# replace redcarpet to kramdown,
-# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
-# document: http://jekyllrb.com/docs/configuration/#kramdown
-markdown: kramdown
-kramdown:
-  input: GFM                            # use Github Flavored Markdown !important
-
-
-
-# Disqus settings
+exclude: [".project"]
+paginate: 3
 disqus_username: bglky
 
-# Duoshuo settings
-#duoshuo_username: bglky
-# Share component is depend on Comment so we can NOT use share only.
-#duoshuo_share: true                   # set to false if you want to use Comment without Sharing
 
 
 
 
 
-# Analytics settings
-# Baidu Analytics
-#ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
-# Google Analytics
-#ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-#ga_domain: huangxuan.me
-
-
-
-# Sidebar settings
-sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "写写代码，看看设计，做做产品。世界那么大，我要去看看。"
-sidebar-avatar: /img/avatar_bglky.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
-
-
+# Side-panel
+side-panel: true                        # whether or not using Side-panel
 
 # Featured Tags
 featured-tags: true                     # whether or not using Feature-Tags
 featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
 
-
+# Socials
+socials: true                           # whether or not using Socials
+introduction: One sentence introducing yourself of what you do. #One sentence introducing yourself of what you do
+avatar: /img/avatar.jpg                 # the path to your avatar
+RSS: false
+github_username: bglky
+twitter_username: zhoubglky
+facebook_username: bglky
 
 # Friends
 friends: [
     {
-        title: "Hux Blog",
-        href: "http://huangxuan.me"
+        title: "Bglky",
+        href: "http://bglky.me"
     },{
-        title: "hansome",
-        href: "http://it198.com"
+        title: "Friend2",
+        href: "http://xxx.com"
+    },{
+        title: "Friend3",
+        href: "http://xxx.com"
     }
 ]

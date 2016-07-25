@@ -1,0 +1,69 @@
+<!-- Left panel with cover effect-->
+<div class="panel panel-left panel-cover">
+	<div class="view navbar-fixed">
+		<div class="pages">
+			<div data-page="panel-left" class="page">
+				<div class="navbar">
+					<div class="navbar-inner">
+						<div class="center">Nav Panel</div>
+					</div>
+				</div>
+				<div class="page-content">
+					<div class="content-block-title">Your pages</div>
+					<div class="list-block inset">
+						<ul>
+							<li>
+								<a href="{{ site.baseurl }}/" class="item-link close-panel">
+									<div class="item-content">
+										<div class="item-media"><i class="icon icon-letter">H</i></div>
+										<div class="item-inner">
+											<div class="item-title">Home</div>
+										</div>
+									</div>
+								</a>
+							</li>
+							{% for my_page in site.pages %} {% if my_page.title %}
+							<li>
+								<a href="{{ my_page.url | prepend: site.baseurl }}" class="item-link close-panel">
+									<div class="item-content">
+										<div class="item-media"><i class="icon icon-letter">{{ my_page.icon-letter }}</i></div>
+										<div class="item-inner">
+											<div class="item-title">{{ my_page.title }}</div>
+										</div>
+									</div>
+								</a>
+							</li>
+							{% endif %} {% endfor %}
+						</ul>
+					</div>
+					<div class="content-block-title">Your socials</div>
+					<div class="content-block inset socials">
+						<img class="avatar" src="{{ "/img/avatar.jpg " | prepend: site.baseurl }}">
+						<p class="introduction">One sentence introducing yourself of what you do.</p>
+						<ul class="social-media-list">
+							{% if site.github_username %}
+							<li>
+								<a class="link icon-only external" target="_blank" href="https://github.com/{{ site.github_username }}">
+									<i class="icon icon-github"></i>
+								</a>
+							</li>
+							{% endif %} {% if site.twitter_username %}
+							<li>
+								<a class="link icon-only external" target="_blank" href="https://twitter.com/{{ site.twitter_username }}">
+									<i class="icon icon-twitter"></i>
+								</a>
+							</li>
+							{% endif %} {% if site.facebook_username %}
+							<li>
+								<a class="link icon-only external" target="_blank" href="https://facebook.com/{{ site.facebook_username }}">
+									<i class="icon icon-facebook"></i>
+								</a>
+							</li>
+							{% endif %}
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
