@@ -42,6 +42,18 @@
 				<i class="icon icon-facebook"></i>
 			</a>
 		</li>
+		{% endif %} {% if site.zhihu_username %}
+		<li>
+			<a class="link icon-only external" target="_blank" href="https://zhihu.com/people/{{ site.zhihu_username }}">
+				<i class="icon icon-zhihu"></i>
+			</a>
+		</li>
+		{% endif %} {% if site.sina_username %}
+		<li>
+			<a class="link icon-only external" target="_blank" href="https://weibo.com/{{ site.sina_username }}">
+				<i class="icon icon-sina"></i>
+			</a>
+		</li>
 		{% endif %}
 	</ul>
 </div>

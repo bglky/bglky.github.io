@@ -1,25 +1,23 @@
 # Bglky Blog
-A awesome SPA and responsive blog based on Framework7 and Jekyll.
-To be continued...
+My Blog / Jeyll Theme , SPA and responsive , based on Framework7 and Jekyll.
 
 ## Live Demo
-
 ### [http://bglky.me](http://bglky.me "Bglky Blog")
 
+## Features
+- 单页（支持搜索引擎搜索）
+- 响应式（移动端优先）
+- Material风格
+- IE10+
+
 ## Quick Start
-
 ### Environment
-
 If you have jekyll installed, simply run `jekyll serve` in Command Line
 and preview the themes in your browser. You can use `jekyll serve --watch` to watch for changes in the source files as well.
-
-
 ### Get Started
-
 You can easily get started by modifying `_config.yml`:
 
 ```
-# Site settings
 title: SPA-blog # the title of your blog
 SEOTitle: SPA-blog | 单页-响应式-博客 # the SEOTitle of your blog
 email: bglky.me@gmail.com # your email
@@ -33,11 +31,8 @@ url: "http://bglky.me" # the base hostname & protocol for your site
 
 There are more options you can check out in the [Jekyll - Official Site](http://jekyllrb.com/), or you can directly dive into code to find more.
 
-
 ### Write Posts
-
 Feel free to checkout Markdown files in the `_posts/`, you will quickly realized how to post your articles with magical markdown plus this nice theme.
-
 The **front-matter** of a post looks like that:
 
 ```
@@ -51,11 +46,11 @@ tags:
     - 博客
 ---
 
-
 ```
+
 ## Attention
-To be continued...
+不断完善中...
 
 ## Thanks
-Inspired by [Hux Blog](https://github.com/Huxpro/huxpro.github.io "Hux Blog") .
-Thanks Framework7 and Jekyll.
+- Inspired by [Hux Blog](https://github.com/Huxpro/huxpro.github.io "Hux Blog") .
+- Thanks Framework7 and Jekyll.

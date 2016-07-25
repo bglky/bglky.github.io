@@ -39,7 +39,7 @@
 					<div class="content-block-title">Your socials</div>
 					<div class="content-block inset socials">
 						<img class="avatar" src="{{ "/img/avatar.jpg " | prepend: site.baseurl }}">
-						<p class="introduction">One sentence introducing yourself of what you do.</p>
+						<p class="introduction">{{ site.introduction }}</p>
 						<ul class="social-media-list">
 							{% if site.github_username %}
 							<li>
@@ -57,6 +57,18 @@
 							<li>
 								<a class="link icon-only external" target="_blank" href="https://facebook.com/{{ site.facebook_username }}">
 									<i class="icon icon-facebook"></i>
+								</a>
+							</li>
+							{% endif %} {% if site.zhihu_username %}
+							<li>
+								<a class="link icon-only external" target="_blank" href="https://zhihu.com/people/{{ site.zhihu_username }}">
+									<i class="icon icon-zhihu"></i>
+								</a>
+							</li>
+							{% endif %} {% if site.sina_username %}
+							<li>
+								<a class="link icon-only external" target="_blank" href="https://weibo.com/{{ site.sina_username }}">
+									<i class="icon icon-sina"></i>
 								</a>
 							</li>
 							{% endif %}

@@ -10,7 +10,7 @@ title: Bglky Blog
 SEOTitle: 周炳光的博客 | Bglky Blog
 email: bglky.me@gmail.com
 keywords: "周炳光,bglky,周炳光的博客,bglky blog,赖柯滢,responsive,blog,framework7,jekyll"
-description: "An awesome SPA and responsive blog based on Framework7 and Jekyll!"
+description: "My Blog / Jeyll Theme , SPA and responsive , based on Framework7 and Jekyll."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://bglky.me" # the base hostname & protocol for your site
 
@@ -18,16 +18,13 @@ url: "http://bglky.me" # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown
 
-gems: [jekyll-paginate]
-
 exclude: [".project","README.md"]
+
+gems: [jekyll-paginate]
 paginate: 10
+
+# disqus
 disqus_username: bglky
-
-
-
-
-
 
 # Side-panel
 side-panel: true                        # whether or not using Side-panel
@@ -38,15 +35,21 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 
 # Socials
 socials: true                           # whether or not using Socials
-introduction: One sentence introducing yourself of what you do. #One sentence introducing yourself of what you do
+introduction: Better late than never.   # One sentence introducing yourself of what you do
 avatar: /img/avatar.jpg                 # the path to your avatar
-RSS: false
+#RSS: false
 github_username: bglky
 #twitter_username: zhoubglky
 #facebook_username: bglky
+zhihu_username: bglky
+sina_username: bglky
 
 # Friends
 friends: [
+    {
+        title: "Bglky",
+        href: "http://bglky.me"
+    },
     {
         title: "Hansome",
         href: "http://it198.com"
