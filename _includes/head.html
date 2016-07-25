@@ -21,7 +21,5 @@
 	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
-	{% if site.disqus_username %}
-	<script src="http://{{site.disqus_username}}.disqus.com/embed.js" async></script>
-	{% endif %}
+	
 </head>

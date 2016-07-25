@@ -1,10 +1,9 @@
 ---
 layout:     post
-title:      "Wamp3修改默认 www目录 及 数据库存储目录"
+title:      "Wamp3修改默认www目录及数据库存储目录"
 subtitle:   " \"Hello Wamp, Hello World.\" "
 date:       2016-05-12
 author:     "Bglky" 
-header-img: "img/post-bg-2015.jpg"
 tags:
     - 服务器
 ---
