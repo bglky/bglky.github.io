@@ -5,8 +5,11 @@ var myApp = new Framework7({
 	pushStateSeparator: "#!",
 	cacheIgnore: ["/"],
 	showBarsOnPageScrollEnd: false,
+	init: false
 });
 
+
+myApp.init();
 // Export selectors engine
 var $$ = Dom7;
 
@@ -51,3 +54,27 @@ $$("article a[href^='http']").addClass("external");//博文里的外部链接添
 //		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 //	})();
 //})
+			
+			
+			
+			var _hmt = _hmt || [];
+			(function() {
+			  var hm = document.createElement("script");
+			  hm.id = "baidu_analytics";
+			  hm.src = "//hm.baidu.com/hm.js?3a12295eec4bd436a92e0b39d50f5b31";
+			  var s = document.getElementsByTagName("script")[0]; 
+			  s.parentNode.insertBefore(hm, s);
+			})();
+
+
+$$(document).on('pageAfterAnimation', '.page', function(){
+	var _hmt = _hmt || [];
+	(function() {
+		$$("#baidu_analytics").remove();
+		var hm = document.createElement("script");
+		hm.id = "baidu_analytics";
+		hm.src = "//hm.baidu.com/hm.js?3a12295eec4bd436a92e0b39d50f5b31";
+		var s = document.getElementsByTagName("script")[0]; 
+		s.parentNode.insertBefore(hm, s);
+	})();
+})

@@ -23,15 +23,6 @@
 		<script src="{{ "/js/my-app.js" | prepend: site.baseurl }}"></script>
 		{% if site.disqus_username %}
 		<script src="http://{{site.disqus_username}}.disqus.com/embed.js" async></script>
-		{% endif %}
-		<script>
-			var _hmt = _hmt || [];
-			(function() {
-			  var hm = document.createElement("script");
-			  hm.src = "//hm.baidu.com/hm.js?3a12295eec4bd436a92e0b39d50f5b31";
-			  var s = document.getElementsByTagName("script")[0]; 
-			  s.parentNode.insertBefore(hm, s);
-			})();
-		</script>
+		{% endif %}		
 	</body>
 </html>
