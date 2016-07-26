@@ -67,12 +67,12 @@ function checkDisqus() {
 	}
 }	
 // load Baidu Analytics
-function loadBA(){
-	$$("script#baidu_analytics").remove();
-	var ba_track_id=$$('meta[name="ba_track_id"]').attr("content");
-	var _hmt = _hmt || [];
-	loadJS("http://hm.baidu.com/hm.js?"+ba_track_id,function(){},true,"baidu_analytics");	
-}
+//function loadBA(){
+//	$$("script#baidu_analytics").remove();
+//	var ba_track_id=$$('meta[name="ba_track_id"]').attr("content");
+//	var _hmt = _hmt || [];
+//	loadJS("http://hm.baidu.com/hm.js?"+ba_track_id,function(){},true,"baidu_analytics");	
+//}
 
 
 // Initialize app
@@ -92,11 +92,11 @@ var mainView = myApp.addView('.view-main', {
 (function() {
 	$$("article a[href^='http']").addClass("external");
 	checkDisqus();
-	loadBA();
+//	loadBA();
 })();	
 
 $$(document).on('pageAfterAnimation', '.page', function() {
 	$$("article a[href^='http']").addClass("external"); //博文里的外部链接添加class="external"	
 	checkDisqus();
-	loadBA();
+//	loadBA();
 })
