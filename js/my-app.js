@@ -117,7 +117,7 @@ $$(document).on('pageInit','.page[data-page="Tags"]',function(e){
 			top=$$(this).offset().top;
 		}		
 	})
-	$$(".page-content").scrollTop(top-135,300);
+	$$(".page-content").scrollTop(top-120,300);
 })
 
 
