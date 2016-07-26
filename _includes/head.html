@@ -16,6 +16,9 @@
 	{% if site.disqus_username %}
 	<meta name="disqus_username" content="{{ site.disqus_username }}">
 	{% endif %}
+	{% if site.ba_track_id %}
+	<meta name="ba_track_id" content="{{ ba_track_id }}">
+	{% endif %}
 
 	<title>{% if page.title %}{{ page.title }} - {{ site.SEOTitle }}{% else %}{{ site.SEOTitle }}{% endif %}</title>
 
