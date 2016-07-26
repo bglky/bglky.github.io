@@ -103,3 +103,22 @@ $$(document).on('pageAfterAnimation', '.page', function() {
 	checkDisqus();
 //	loadBA();
 })
+
+$$(document).on('pageInit','.page[data-page="Tags"]',function(e){
+	var urlStr=e.detail.page.url;
+	var index=urlStr.indexOf("#");
+	var hash="";
+	var top=0;
+	if (index>0){
+		hash=urlStr.substring(index+1);
+	}	
+	$$('.page[data-page="Tags"] .tag-name a').each(function(){
+		if($$(this).attr("name")==hash){
+			top=$$(this).offset().top;
+		}		
+	})
+	$$(".page-content").scrollTop(top-135,300);
+})
+
+
+
