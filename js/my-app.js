@@ -69,7 +69,8 @@ function checkDisqus() {
 // load Baidu Analytics
 function loadBA(){
 	$$("script#baidu_analytics").remove();
-	var ba_track_id=$$('meta[name="ba_track_id"]').attr("content");	
+	var ba_track_id=$$('meta[name="ba_track_id"]').attr("content");
+	var _hmt = _hmt || [];
 	loadJS("http://hm.baidu.com/hm.js?"+ba_track_id,function(){},true,"baidu_analytics");	
 }
 
@@ -88,7 +89,6 @@ var $$ = Dom7;
 var mainView = myApp.addView('.view-main', {	
 });
 
-
 (function() {
 	$$("article a[href^='http']").addClass("external");
 	checkDisqus();
@@ -100,31 +100,3 @@ $$(document).on('pageAfterAnimation', '.page', function() {
 	checkDisqus();
 	loadBA();
 })
-
-
-			
-//loadJS("http://hm.baidu.com/hm.js?3a12295eec4bd436a92e0b39d50f5b31",function(){console.log("loaded baidu")},true,"baidu_analytics");	
-			
-//百度统计
-//			
-//			var _hmt = _hmt || [];
-//			(function() {
-//			  var hm = document.createElement("script");
-//			  hm.id = "baidu_analytics";
-//			  hm.src = "//hm.baidu.com/hm.js?3a12295eec4bd436a92e0b39d50f5b31";
-//			  var s = document.getElementsByTagName("script")[0]; 
-//			  s.parentNode.insertBefore(hm, s);
-//			})();
-//
-//
-//$$(document).on('pageAfterAnimation', '.page', function(){
-//	var _hmt = _hmt || [];
-//	(function() {
-//		$$("#baidu_analytics").remove();
-//		var hm = document.createElement("script");
-//		hm.id = "baidu_analytics";
-//		hm.src = "//hm.baidu.com/hm.js?3a12295eec4bd436a92e0b39d50f5b31";
-//		var s = document.getElementsByTagName("script")[0]; 
-//		s.parentNode.insertBefore(hm, s);
-//	})();
-//})
