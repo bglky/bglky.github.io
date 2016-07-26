@@ -1,11 +1,13 @@
+// Export selectors engine
+var $$ = Dom7;
 //// load js function
-function loadJS(u, c, a = true, i = "") {
+function loadJS(u, c, a, i ) {
 	var d = document,
 		t = 'script',
 		o = d.createElement(t),
 		s = d.getElementsByTagName(t)[0];
 	o.async = true;
-	if (i) o.id = i;
+	o.id = i;
 	o.src = u;
 	if (c) {
 		o.addEventListener('load', function(e) {
@@ -83,8 +85,7 @@ var myApp = new Framework7({
 	cacheIgnore: ["/"],
 	showBarsOnPageScrollEnd: false
 });
-// Export selectors engine
-var $$ = Dom7;
+
 // Add view
 var mainView = myApp.addView('.view-main', {	
 });
