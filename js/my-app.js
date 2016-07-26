@@ -101,5 +101,5 @@ var mainView = myApp.addView('.view-main', {
 $$(document).on('pageAfterAnimation', '.page', function() {
 	$$("article a[href^='http']").addClass("external"); //博文里的外部链接添加class="external"	
 	checkDisqus();
-	loadBA();
+//	loadBA();
 })
