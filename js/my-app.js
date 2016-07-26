@@ -78,7 +78,7 @@ var $$ = Dom7;
 
 
 function abc(){
-	alert("");
+	alert("debug");
 }
 
 // Initialize app
