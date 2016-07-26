@@ -1,19 +1,19 @@
 //// load js function
-//function loadJS(u, c, a = true, i = "") {
-//	var d = document,
-//		t = 'script',
-//		o = d.createElement(t),
-//		s = d.getElementsByTagName(t)[0];
-//	o.async = true;
-//	if (i) o.id = i;
-//	o.src = u;
-//	if (c) {
-//		o.addEventListener('load', function(e) {
-//			c(null, e);
-//		}, false);
-//	}
-//	s.parentNode.insertBefore(o, s);
-//}
+function loadJS(u, c, a = true, i = "") {
+	var d = document,
+		t = 'script',
+		o = d.createElement(t),
+		s = d.getElementsByTagName(t)[0];
+	o.async = true;
+	if (i) o.id = i;
+	o.src = u;
+	if (c) {
+		o.addEventListener('load', function(e) {
+			c(null, e);
+		}, false);
+	}
+	s.parentNode.insertBefore(o, s);
+}
 //// load Disqus , it is async now,support spa
 //function loadDisqus(commentDom) {
 //	var disqus_username=$$('meta[name="disqus_username"]').attr("content");
