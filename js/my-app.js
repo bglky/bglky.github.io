@@ -1,21 +1,21 @@
 // Export selectors engine
 var $$ = Dom7;
 //// load js function
-function loadJS(u, c, a, i ) {
-	var d = document,
-		t = 'script',
-		o = d.createElement(t),
-		s = d.getElementsByTagName(t)[0];
-	o.async = true;
-	o.id = i;
-	o.src = u;
-	if (c) {
-		o.addEventListener('load', function(e) {
-			c(null, e);
-		}, false);
-	}
-	s.parentNode.insertBefore(o, s);
-}
+//function loadJS(u, c, a = true, i = "") {
+//	var d = document,
+//		t = 'script',
+//		o = d.createElement(t),
+//		s = d.getElementsByTagName(t)[0];
+//	o.async = a;
+//	if (i) o.id = i;
+//	o.src = u;
+//	if (c) {
+//		o.addEventListener('load', function(e) {
+//			c(null, e);
+//		}, false);
+//	}
+//	s.parentNode.insertBefore(o, s);
+//}
 //// load Disqus , it is async now,support spa
 //function loadDisqus(commentDom) {
 //	var disqus_username=$$('meta[name="disqus_username"]').attr("content");
@@ -77,6 +77,10 @@ function loadJS(u, c, a, i ) {
 //}
 
 
+function abc(){
+	alert("");
+}
+
 // Initialize app
 var myApp = new Framework7({
 	material: true,
@@ -91,7 +95,7 @@ var mainView = myApp.addView('.view-main', {
 });
 
 (function() {
-	$$("article a[href^='http']").addClass("external");
+	$$("article a[href^='http']").addClass("external");abc();
 //	checkDisqus();
 //	loadBA();
 })();	
