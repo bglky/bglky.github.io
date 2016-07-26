@@ -13,6 +13,10 @@
 	<meta name="keywords" content="{{ site.keywords }}">
 	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
+	{% if site.disqus_username %}
+	<meta name="disqus_username" content="{{ site.disqus_username }}">
+	{% endif %}
+
 	<title>{% if page.title %}{{ page.title }} - {{ site.SEOTitle }}{% else %}{{ site.SEOTitle }}{% endif %}</title>
 
 	<!-- Path to Framework7 Library CSS, Material Theme -->
