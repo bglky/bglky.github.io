@@ -93,13 +93,13 @@ var mainView = myApp.addView('.view-main', {
 
 
 (function() {
-	$$("article a[href^='http']").addClass("external");
+	$$("article a[href^='http']").addClass("external").attr("target","_blank");
 	checkDisqus();
 	loadBA();
 })();	
 
 $$(document).on('pageAfterAnimation', '.page', function() {
-	$$("article a[href^='http']").addClass("external"); //博文里的外部链接添加class="external"	
+	$$("article a[href^='http']").addClass("external").attr("target","_blank"); //博文里的外部链接添加class="external"	
 	checkDisqus();
 //	loadBA();
 })
