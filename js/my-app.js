@@ -91,6 +91,7 @@ function loadDuoshuo(commentDom) {
 		DUOSHUO.EmbedThread(el);
 		commentDom.html("");
 		commentDom.append(el);
+		DUOSHUO.initSelector('.ds-share',{type:'ShareWidget'});
 	}
 }
 function checkDuoshuo(page){
@@ -131,7 +132,7 @@ var mainView = myApp.addView('.view-main', {
 $$(document).on('pageAfterAnimation', '.page', function() {
 	$$("article a[href^='http']").addClass("external").attr("target","_blank"); //博文里的外部链接添加class="external"	
 	checkDisqus($$(this));
-	checkDuoshuo($$(this));
+	checkDuoshuo($$(this));	
 //	loadBA();
 })
 

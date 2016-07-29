@@ -71,6 +71,24 @@ layout: default
 				</div>
 				{% endif %}
 				<!-- disqus 评论框 end -->
+				<!-- 多说分享 start -->
+				{% if site.duoshuo_username %}
+				<div class="ds-share flat content-block" data-thread-key="{{page.id}}" data-title="{{page.title}}" data-content="{{ content | strip_html | truncate:80 }} | {{ site.SEOTitle }} " data-url="{{site.url}}{{site.baseurl}}/#!{{site.baseurl}}{{page.url}}">
+				    <div class="ds-share-inline">
+				      <ul  class="ds-share-icons-16">
+				      	
+				      	<li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+				        <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+				        <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+				        <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+				      	
+				      </ul>
+				      <div class="ds-share-icons-more">
+				      </div>
+				    </div>
+				</div>
+				{% endif %}
+				<!-- 多说分享 end -->
 				<!-- 多说评论框 start -->
 				{% if site.duoshuo_username %}
 				<div class="comment_duoshuo content-block"  data-thread-key="{{page.id}}" data-title="{{page.title}}" data-url="{{site.url}}{{site.baseurl}}/#!{{site.baseurl}}{{page.url}}">
