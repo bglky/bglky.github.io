@@ -1,6 +1,9 @@
 // Export selectors engine
 var $$ = Dom7;
 
+
+var duoshuoQuery = {short_name:$$('meta[name="duoshuo_username"]').length>0? $$('meta[name="duoshuo_username"]').attr("content"):""};
+
 // load js function
 function loadJS(u, c, a, i) {
 	var d = document,
@@ -50,25 +53,51 @@ function loadDisqus(commentDom) {
 	}
 }
 // check whether load Disqus or not, if load,check which commentDom to load to,it is perfect now
-function checkDisqus() {
-	var commentDom = $$(".page").find(".comment");
+function checkDisqus(page) {
+//	var commentDom = $$(".page").find(".comment_disqus");
+//	if (commentDom.length > 0) {
+//		commentDom.find("#disqus_thread").remove();
+//		if (commentDom.length == 1) {
+//			if ($$(".view-main").find(".page").length == 1 || $$(".page-from-left-to-center").find(".comment_disqus").length > 0 || $$(".page-on-center").find(".comment_disqus").length > 0) {
+//				loadDisqus(commentDom);
+//			}
+//		} else {
+//			if ($$(".page-from-left-to-center").find(".comment_disqus").length > 0) {
+//				commentDom = $$(".page-from-left-to-center").find(".comment_disqus");
+//			}
+//			if ($$(".page-on-center").find(".comment_disqus").length > 0) {
+//				commentDom = $$(".page-on-center").find(".comment_disqus");
+//			}
+//			loadDisqus(commentDom);
+//		}
+//	}
+	var commentDom = page.find(".comment_disqus");
 	if (commentDom.length > 0) {
-		commentDom.find("#disqus_thread").remove();
-		if (commentDom.length == 1) {
-			if ($$(".view-main").find(".page").length == 1 || $$(".page-from-left-to-center").find(".comment").length > 0 || $$(".page-on-center").find(".comment").length > 0) {
-				loadDisqus(commentDom);
-			}
-		} else {
-			if ($$(".page-from-left-to-center").find(".comment").length > 0) {
-				commentDom = $$(".page-from-left-to-center").find(".comment");
-			}
-			if ($$(".page-on-center").find(".comment").length > 0) {
-				commentDom = $$(".page-on-center").find(".comment");
-			}
-			loadDisqus(commentDom);
-		}
+		$$(".page").find("#disqus_thread").remove();
+		loadDisqus(commentDom);
 	}
-}	
+}
+
+// load duoshou
+function loadDuoshuo(commentDom) {
+	if ($$("script#duoshuo").length == 0) {
+		loadJS("http://static.duoshuo.com/embed.js", function() {			
+		}, true, "duoshuo");
+	} else {
+		var el = document.createElement('div'); //该div不需要设置class="ds-thread"			
+		el.setAttribute('data-thread-key', commentDom.data("thread-key")); //必选参数
+		el.setAttribute('data-url', commentDom.data("url")); //必选参数
+		el.setAttribute('data-title', commentDom.data("title"));
+		DUOSHUO.EmbedThread(el);
+		commentDom.html("");
+		commentDom.append(el);
+	}
+}
+function checkDuoshuo(page){
+	var commentDom =page.find(".comment_duoshuo");
+	if(commentDom.length>0)
+	loadDuoshuo(commentDom);
+}
 // load Baidu Analytics
 function loadBA(){
 	$$("script#baidu_analytics").remove();
@@ -94,13 +123,15 @@ var mainView = myApp.addView('.view-main', {
 
 (function() {
 	$$("article a[href^='http']").addClass("external").attr("target","_blank");
-	checkDisqus();
+	checkDisqus($$(".page"));
+	checkDuoshuo($$(".page"));
 	loadBA();
 })();	
 
 $$(document).on('pageAfterAnimation', '.page', function() {
 	$$("article a[href^='http']").addClass("external").attr("target","_blank"); //博文里的外部链接添加class="external"	
-	checkDisqus();
+	checkDisqus($$(this));
+	checkDuoshuo($$(this));
 //	loadBA();
 })
 

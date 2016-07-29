@@ -1,4 +1,4 @@
-<head>
+<head lang="zh-CN">
 	<meta charset="utf-8">
 	<!--IE=edge使IE启用其所支持的最新的引擎渲染网页，chrome=1激活Chrome Frame.-->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -14,8 +14,12 @@
 	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 	<!-- My Google Search Console -->
 	<meta name="google-site-verification" content="qcNatfyfm9XNpGn-RdTi78hl4nFoFRjfQeG91b-vWnY" />
+	
 	{% if site.disqus_username %}
 	<meta name="disqus_username" content="{{ site.disqus_username }}">
+	{% endif %}
+	{% if site.duoshuo_username %}
+	<meta name="duoshuo_username" content="{{ site.duoshuo_username }}">
 	{% endif %}
 	{% if site.ba_track_id %}
 	<meta name="ba_track_id" content="{{ site.ba_track_id }}">

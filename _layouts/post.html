@@ -66,11 +66,18 @@ layout: default
 				</div>
 				<!-- disqus 评论框 start -->
 				{% if site.disqus_username %}
-				<div class="comment content-block" data-disqus_identifier="{{page.id}}" data-disqus_url="{{site.url}}{{site.baseurl}}/#!{{site.baseurl}}{{page.url}}" data-disqus_title="{{page.title}}">
+				<div class="comment_disqus content-block" data-disqus_identifier="{{page.id}}" data-disqus_url="{{site.url}}{{site.baseurl}}/#!{{site.baseurl}}{{page.url}}" data-disqus_title="{{page.title}}">
 					<div id="disqus_thread" class="disqus-thread"></div>
 				</div>
 				{% endif %}
 				<!-- disqus 评论框 end -->
+				<!-- 多说评论框 start -->
+				{% if site.duoshuo_username %}
+				<div class="comment_duoshuo content-block"  data-thread-key="{{page.id}}" data-title="{{page.title}}" data-url="{{site.url}}{{site.baseurl}}/#!{{site.baseurl}}{{page.url}}">
+					<div class="ds-thread"   data-thread-key="{{page.id}}" data-title="{{page.title}}" data-url="{{site.url}}{{site.baseurl}}/#!{{site.baseurl}}{{page.url}}"></div>
+				</div>			
+				{% endif %}
+				<!-- 多说评论框 end -->
 			</div>
 			<div class="side-panel">
 				{% include panel-side.html %}
