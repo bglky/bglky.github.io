@@ -532,3 +532,17 @@ i.ks-icon-upload {
     height: 24px;
     background-image: url("data:image/svg+xml;charset=utf-8,<svg fill='#FFFFFF' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M0 0h24v24H0z' fill='none'/><path d='M9 16h6v-6h4l-7-7-7 7h4zm-4 2h14v2H5z'/></svg>");
 }
+
+//framework7 progressbar
+.color-yellow {
+    color: #ffeb3b;
+}
+.progressbar.color-yellow,.progressbar-infinite.color-yellow {
+    background-color: rgba(255, 235, 59, 0.5);
+}
+.progressbar.color-yellow span,.progressbar-infinite.color-yellow span{
+    background-color: #ffeb3b;
+}
+.progressbar-infinite.color-yellow:before,.progressbar-infinite.color-yellow:after{
+    background-color: #ffeb3b;
+}

@@ -152,5 +152,15 @@ $$(document).on('pageInit','.page[data-page="Tags"]',function(e){
 	$$(".page-content").scrollTop(top-120,300);
 })
 
+$$(document).on('ajaxStart', function (e) {
+	var container = $$('body');
+    if (container.children('.progressbar, .progressbar-infinite').length) return; //don't run all this if there is a current progressbar loading
+    myApp.showProgressbar(container,'yellow');	    
+});
+$$(document).on('ajaxComplete', function (e) {
+	var container = $$('body');
+	myApp.hideProgressbar(container); //hide
+});
+
 
 
