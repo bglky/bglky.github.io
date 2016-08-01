@@ -71,6 +71,12 @@
 									<i class="icon icon-sina"></i>
 								</a>
 							</li>
+							{% endif %} {% if site.segmentfault_username %}
+							<li>
+								<a class="link icon-only external" target="_blank" href="https://segmentfault.com/u/{{ site.segmentfault_username }}">
+									<i class="icon icon-segmentfault"></i>
+								</a>
+							</li>
 							{% endif %}
 						</ul>
 					</div>

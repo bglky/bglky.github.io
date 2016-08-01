@@ -3,16 +3,14 @@
 <div class="content-block-title">FEATURED TAGS</div>
 <div class="content-block">
 	<ul>
-		{% for tag in site.tags %}
-		{% if tag[1].size >= {{site.featured-condition-size}} %}
+		{% for tag in site.tags %} {% if tag[1].size >= {{site.featured-condition-size}} %}
 		<li>
 			<a class="link chip" href="{{ site.baseurl }}/tags/#{{ tag[0] }}">
 				<!--<div class="chip-media bg-blue">T</div>-->
 				<div class="chip-label">{{ tag[0] }}</div>
 			</a>
 		</li>
-		{% endif %}
-		{% endfor %}
+		{% endif %} {% endfor %}
 	</ul>
 </div>
 {% endif %}
@@ -52,6 +50,12 @@
 		<li>
 			<a class="link icon-only external" target="_blank" href="https://weibo.com/{{ site.sina_username }}">
 				<i class="icon icon-sina"></i>
+			</a>
+		</li>
+		{% endif %} {% if site.segmentfault_username %}
+		<li>
+			<a class="link icon-only external" target="_blank" href="https://segmentfault.com/u/{{ site.segmentfault_username }}">
+				<i class="icon icon-segmentfault"></i>
 			</a>
 		</li>
 		{% endif %}

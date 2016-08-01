@@ -50,7 +50,8 @@ github_username: bglky
 #twitter_username: zhoubglky
 #facebook_username: bglky
 zhihu_username: bglky
-sina_username: bglky
+#sina_username: bglky
+segmentfault_username: bglky
 
 # Friends
 friends: [
