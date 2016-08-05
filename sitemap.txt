@@ -1,0 +1,13 @@
+bglky.me/index.html
+bglky.me/about/	
+bglky.me/tags/	
+bglky.me/2016/07/26/SPA-load-disqus.html	
+bglky.me/2016/05/12/hello-wamp.html	
+bglky.me/2016/05/09/hello-jekyll.html
+www.bglky.me/index.html
+www.bglky.me/about/	
+www.bglky.me/tags/	
+www.bglky.me/2016/07/26/SPA-load-disqus.html	
+www.bglky.me/2016/05/12/hello-wamp.html	
+www.bglky.me/2016/05/09/hello-jekyll.html
+timeline.bglky.me
