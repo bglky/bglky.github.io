@@ -11,9 +11,11 @@
 	<meta name="author" content="周炳光,bglky">
 	<meta name="copyright" content="周炳光,bglky">
 	<meta name="keywords" content="{{ site.keywords }}">
-	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{% if page.description %} {{ page.description }} {% else %} {{ site.description }} {% endif %} {% endif %}">
 	<!-- My Google Search Console -->
 	<meta name="google-site-verification" content="qcNatfyfm9XNpGn-RdTi78hl4nFoFRjfQeG91b-vWnY" />
+	<!-- baidu -->
+	<meta name="baidu-site-verification" content="0iLwzUO3qt" />
 	<!-- 360 -->
 	<meta name="360-site-verification" content="3dbe924a9a58b1fbf328fdf13eb74b67" />
 	<!-- sogou -->
