@@ -5,7 +5,7 @@ subtitle:   "\"A very interesting phenomenon.\""
 date:       2016-09-12 17:25:07 +0800
 author:     "Bglky"
 tags:
-    - 服务器
+    - JS
 ---
 
 ### 1. 有趣的现象
