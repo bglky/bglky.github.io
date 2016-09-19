@@ -9,7 +9,7 @@ tags:
 ---
 
 ### 1. 有趣的现象
-![有趣的现象](img/2016/an-interesting-phenomenon.jpg)
+![有趣的现象](/img/2016/an-interesting-phenomenon.jpg)
 
 ### 2. 理论基础：
 > 每当读取一个number,string,boolean基本类型值的时候，后台就会创建一个对应的基本包装类型的对象Number,String,Boolean，从而让我们能够调用一些方法来操作这些数据。
